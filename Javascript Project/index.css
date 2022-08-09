@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+body {
+  margin: 0;
+  padding: 3rem 7rem;
+  background: #3d087b;
+  min-height: 100vh;
+  color: white;
+  font-family: sans-serif;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-container .time-area {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.nav-container .time-area::before {
+  position: absolute;
+  content: "";
+  height: 10%;
+  width: 80%;
+  margin-inline: 10%;
+  border-radius: 10px;
+  bottom: 0;
+  left: 0;
+  box-shadow: 1px 10px 0px 3px rgba(255, 255, 255, 0.658);
+}
+
+.nav-container .time-area::after {
+  position: absolute;
+  content: "";
+  height: 5%;
+  width: 60%;
+  margin-inline: 20%;
+  border-radius: 10px;
+  bottom: -10px;
+  left: 0;
+  box-shadow: 1px 10px 0px 3px rgba(255, 255, 255, 0.349);
+}
+
+.nav-container .time-area .flash-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #8a11bf;
+}
+.items {
+  background-color: #f6e2ff;
+  padding: 0.5rem 1rem;
+}
+.AM {
+  background: url(AM.svg) no-repeat center/cover;
+  padding: 1.05rem;
+  color: white;
+}
+.grid-container {
+  margin-block: 2rem;
+  display: grid;
+  grid-template-columns: 500px 530px;
+  row-gap: 1rem;
+  justify-items: center;
+}
+.wakeup {
+  /* padding-left: 750px; */
+  width: 370px;
+  /* padding-top: 180px; */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  color: #3d087b;
+  background-color: white;
+  padding: 2rem;
+  gap: 5rem;
+  border-radius: 10px;
+}
+
+.f_items {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  position: relative;
+}
+
+.-dining-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.f_items::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 1px solid transparent;
+  left: 10px;
+  bottom: -50px;
+  border-left-color: #d4d0d0;
+}
+
+.f_items:last-child:after {
+  border-left-color: transparent;
+}
+
+.-dining-text {
+  /* margin-inline: 2rem; */
+}
+
+.flex-container select {
+  border-color: #d4d0d0;
+  padding-inline: 1rem;
+}
+
+.grab-food {
+  background-color: white;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+}
+.grab-food > p {
+  color: #8a11bf;
+  font-family: "Secular One", sans-serif;
+  font-size: 1.8rem;
+}
+
+.color-change {
+  background: #8a11bf;
+  width: 80%;
+}
+.color-change p {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.wakeup-img {
+  margin-top: -300px;
+}
+
+.set_alarm {
+  padding: 10px 80px;
+  background:transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) ;
+  /* background: linear-gradient(to left, purple, #8a11bf); */
+  border: none;
+  color: transparent;
+  font-size: 1.2rem;
+  font-family: verdana;
+  margin-left: 3.5rem;
+  margin-top: -1rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.set_alarm::before {
+  position: absolute;
+  content: "Set Alarm";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.5s;
+}
+
+.set_alarm:hover::before {
+  content: "Party Time";
+}
+
+.set_alarm:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, purple, #8a11bf);
+}

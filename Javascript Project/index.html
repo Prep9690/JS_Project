@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS PROJECT</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <!-- <style>
+      body {
+        margin: 0;
+        padding: 3rem 7rem;
+        background: #3d087b;
+        min-height: 100vh;
+        color: white;
+        font-family: sans-serif;
+      }
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .nav-container .time-area {
+        background-color: white;
+        color: black;
+        padding: 1rem;
+        border-radius: 10px;
+      }
+      .nav-container .time-area .flash-time {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        color: #8a11bf;
+      }
+      .items {
+        background-color: #f6e2ff;
+        padding: 0.5rem 1rem;
+      }
+      .AM {
+        background: url(AM.png) no-repeat center/cover;
+        padding: 1.05rem;
+        color: white;
+      }
+      .grid-container {
+        margin-block: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 1rem;
+        justify-items: center;
+      }
+      .wakeup {
+        padding-left: 750px;
+        width: 370px;
+        padding-top: 180px;
+      }
+    </style> -->
+    <!-- NAV -->
+    <div class="nav-container">
+      <div class="logo">
+        <img src="clock logo.png" alt="" />
+      </div>
+      <div class="time-area">
+        <div class="flash-time">
+          <div class="time-text">TIME</div>
+          <div class="items">
+            <span class="hour-text">10</span> <br />
+            Hours
+          </div>
+          <div class="items"><span class="min-text">10</span> <br />Mins</div>
+          <div class="items">
+            <span class="seconds-text">10</span> <br />Secs
+          </div>
+          <div class="AM">AM</div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF NAV -->
+    <!-- MAIN-CONTENT -->
+    <div class="grid-container">
+      <div class="flex-container">
+        <div class="flex-item1 f_items">
+          <img class="-dining-icon" src="wake_up.svg" alt="" />
+          <span class="-dining-text">Set wakeup time</span>
+
+          <select>
+            <option value="item">9 AM - 10AM</option>
+            <option value="item">10 AM - 11AM</option>
+            <option value="item">11 AM - 12 PM</option>
+          </select>
+        </div>
+        <div class="flex-item2 f_items">
+          <img class="-dining-icon" src="lunch.png" alt="" />
+          <span class="-dining-text">Set Lunch time</span>
+          <select>
+            <option value="item">12 PM - 1 PM</option>
+            <option value="item">1 PM - 2 PM</option>
+            <option value="item">3 PM - 4 PM</option>
+          </select>
+        </div>
+        <div class="flex-item3 f_items">
+          <img class="-dining-icon" src="nep.png" alt="" />
+          <span class="-dining-text">Set nap time</span>
+          <select>
+            <option value="item">4 PM - 5 PM</option>
+            <option value="item">5 PM - 6 PM</option>
+            <option value="item">6 PM - 7 PM</option>
+          </select>
+        </div>
+        <div class="flex-item4 f_items">
+          <img class="-dining-icon" src="nep.png" alt="" />
+          <span class="-dining-text">Set Night time</span>
+          <select>
+            <option value="item">7 PM - 8 PM</option>
+            <option value="item">8 PM - 9 PM</option>
+            <option value="item">9 PM - 10 PM</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid-item2 grab-food">
+        <p>GRAB SOME HEALTHY BREAKFAST!!</p>
+      </div>
+      <div class="grid-item3 grab-food color-change">
+        <p>GOOD MORNING!! WAKE UP!!</p>
+      </div>
+      <img class="grid-item4 wakeup-img" src="wakeup.svg" alt="" />
+    </div>
+    <button class="set_alarm">Set Alarm</button>
+    <!-- end of grid -->
+    <!--  -->
+  </body>
+</html>
